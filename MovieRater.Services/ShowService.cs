@@ -10,6 +10,13 @@ namespace MovieRater.Services
 {
     public class ShowService
     {
+        private readonly Guid _userId;
+
+        public ShowService(Guid userId)
+        {
+            _userId = userId;
+        }
+
         public bool CreateShow(ShowCreate model)
         {
             var entity =
@@ -26,5 +33,28 @@ namespace MovieRater.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+
     }
+
+    /*public ShowDetail GetShowByName(int id)
+    {
+        using (var ctx = new ApplicationDbContext())
+        {
+            var entity =
+                ctx
+                .Shows
+                .Single(e => e.ShowId == id);
+            return
+                new ShowDetail
+                {
+                    ShowId = entity.ShowId,
+                    ShowName = entity.ShowName,
+                    Description = entity.Description,
+                    CreatedUtc = entity.CreatedUtc,
+                    ModifiedUtc = entity.ModifiedUtc
+                };
+        }
+    }*/
 }
+
