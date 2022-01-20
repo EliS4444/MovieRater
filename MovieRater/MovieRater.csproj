@@ -314,14 +314,6 @@
       <Project>{4a0a6db3-e1f4-46f7-a795-4241a7322b61}</Project>
       <Name>MovieRater.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MovieRater.Models\MovieRater.Models.csproj">
-      <Project>{de772069-9661-400d-ae03-23c6c951d290}</Project>
-      <Name>MovieRater.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MovieRater.Services\MovieRater.Services.csproj">
-      <Project>{b25fee97-b3d3-45b7-9067-8656a3c4c872}</Project>
-      <Name>MovieRater.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
