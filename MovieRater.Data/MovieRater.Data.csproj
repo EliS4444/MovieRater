@@ -91,5 +91,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieRater.Models\MovieRater.Models.csproj">
+      <Project>{de772069-9661-400d-ae03-23c6c951d290}</Project>
+      <Name>MovieRater.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieRater.Services\MovieRater.Services.csproj">
+      <Project>{b25fee97-b3d3-45b7-9067-8656a3c4c872}</Project>
+      <Name>MovieRater.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
