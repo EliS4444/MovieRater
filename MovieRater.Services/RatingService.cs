@@ -34,5 +34,23 @@ namespace MovieRater.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        public IEnumerable<RatingListItem> GetRatingsByUser()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query = ctx.Ratings.Where(e => e.OwnerId == _userId)
+                    .Select(e => new RatingListItem
+                    {
+                        RatingId = e.RatingId,
+                        Score = e.Score,
+                        Remarks = e.Remarks,
+                        CreatedUtc = e.CreatedUtc
+                    });
+
+                return query.ToList();
+            }
+        }
+
     }
 }
