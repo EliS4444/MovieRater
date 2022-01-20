@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using MovieRater.Providers;
 using MovieRater.Models;
+using MovieRater.Data;
 
 namespace MovieRater
 {
