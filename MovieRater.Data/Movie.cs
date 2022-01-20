@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MovieRater.Data
 {
-    public class Movie
+    public class Movie : Media
     {
-        [Key]
-        public int MovieId { get; set; }
         [Required]
         public string MovieName { get; set; }
         [Required]
