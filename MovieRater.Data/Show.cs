@@ -15,6 +15,7 @@ namespace MovieRater.Data
         public string ShowName { get; set; }
         [Required]
         public string Description { get; set; }
+        [Required]
         public string EpisodeCount { get; set; }
         public string SeasonCount { get; set; }
         public DateTimeOffset CreatedUtc { get; set; }
