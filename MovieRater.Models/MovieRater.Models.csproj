@@ -54,9 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatingCreate.cs" />
     <Compile Include="ShowCreate.cs" />
+    <Compile Include="ShowDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
