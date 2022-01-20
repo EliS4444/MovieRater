@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MovieRater.Models
 {
-    internal class RatingEdit
+    public class RatingEdit
     {
+        public int RatingId { get; set; }
+        public double Score { get; set; }
+        public string Remarks { get; set; }
     }
 }

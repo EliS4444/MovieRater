@@ -52,5 +52,20 @@ namespace MovieRater.Services
             }
         }
 
+        public bool UpdateRating(RatingEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.Ratings.Single(e => e.RatingId == model.RatingId && e.OwnerId == _userId);
+
+                entity.Score = model.Score;
+                entity.Remarks = model.Remarks;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+
+        }
+
     }
 }
