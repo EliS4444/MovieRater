@@ -9,13 +9,6 @@ namespace MovieRater.Data
 {
     public class Movie : Media
     {
-        [Required]
-        public string MovieName { get; set; }
-        [Required]
-        public string MovieDescription { get; set; }
-        [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
-        public DateTimeOffset ModifiedUtc { get; set; }
 
         public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
 

@@ -33,8 +33,8 @@ namespace MovieRater.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<Movie> Movies { get; set; }
-        public DbSet<Show> Shows { get; set; }
+        //public DbSet<Movie> Movies { get; set; }
+        //public DbSet<Show> Shows { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Media> Media { get; set; }
         //public DbSet<Genre> Genres { get; set; }

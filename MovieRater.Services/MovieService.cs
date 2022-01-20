@@ -15,14 +15,14 @@ namespace MovieRater.Services
             var entity =
                 new Movie()
                 {
-                    MovieName = model.MovieName,
-                    MovieDescription = model.MovieDescription,
+                    Title = model.MovieName,
+                    Description = model.MovieDescription,
                     CreatedUtc = DateTime.Now
                 };
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Movies.Add(entity);
+                ctx.Media.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }

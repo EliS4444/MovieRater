@@ -9,15 +9,11 @@ namespace MovieRater.Data
 {
     public class Show : Media
     {
-        [Required]
-        public string ShowName { get; set; }
-        [Required]
-        public string Description { get; set; }
+
         [Required]
         public string EpisodeCount { get; set; }
         public string SeasonCount { get; set; }
-        public DateTimeOffset CreatedUtc { get; set; }
-        public DateTimeOffset ModifiedUtc { get; set; }
+
 
         public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
 

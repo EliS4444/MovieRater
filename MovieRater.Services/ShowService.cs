@@ -19,17 +19,17 @@ namespace MovieRater.Services
 
         public bool CreateShow(ShowCreate model)
         {
-            var entity =
+            Show entity =
                 new Show()
                 {
-                    ShowName = model.ShowName,
+                    Title = model.ShowName,
                     Description = model.Description,
                     CreatedUtc = DateTime.Now
                 };
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Shows.Add(entity);
+                ctx.Media.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
