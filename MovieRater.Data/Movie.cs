@@ -7,17 +7,8 @@ using System.Threading.Tasks;
 
 namespace MovieRater.Data
 {
-    public class Movie
+    public class Movie : Media
     {
-        [Key]
-        public int MovieId { get; set; }
-        [Required]
-        public string MovieName { get; set; }
-        [Required]
-        public string MovieDescription { get; set; }
-        [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
-        public DateTimeOffset ModifiedUtc { get; set; }
 
         public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
 
