@@ -14,7 +14,10 @@ namespace MovieRater.Data
         [Required]
         public Guid OwnerId { get; set; }
         [Required]
+        [Range (0, 5)]
         public double Score { get; set; }
+        [MaxLength(255)]
+        public string Remarks { get; set; }
         [Required]
         [Display(Name ="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
