@@ -10,6 +10,12 @@ namespace MovieRater.Services
 {
     public class MovieService
     {
+        private readonly Guid _userId;
+
+        public MovieService(Guid userId)
+        {
+            _userId = userId;
+        }
         public bool CreateMovie(MovieCreate model)
         {
             var entity =

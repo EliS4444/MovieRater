@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class TestMediaDb : DbMigration
+    public partial class initialMigration : DbMigration
     {
         public override void Up()
         {
@@ -12,16 +12,12 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        MovieName = c.String(),
-                        MovieDescription = c.String(),
-                        CreatedUtc = c.DateTimeOffset(precision: 7),
+                        Title = c.String(nullable: false),
+                        Description = c.String(nullable: false),
+                        CreatedUtc = c.DateTimeOffset(nullable: false, precision: 7),
                         ModifiedUtc = c.DateTimeOffset(precision: 7),
-                        ShowName = c.String(),
-                        Description = c.String(),
                         EpisodeCount = c.String(),
                         SeasonCount = c.String(),
-                        CreatedUtc1 = c.DateTimeOffset(precision: 7),
-                        ModifiedUtc1 = c.DateTimeOffset(precision: 7),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);

@@ -89,17 +89,9 @@
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Media.cs" />
-    <Compile Include="Migrations\202201202117345_TestMediaDb.cs" />
-    <Compile Include="Migrations\202201202117345_TestMediaDb.designer.cs">
-      <DependentUpon>202201202117345_TestMediaDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201202126432_ModifiedMediaParentObject.cs" />
-    <Compile Include="Migrations\202201202126432_ModifiedMediaParentObject.designer.cs">
-      <DependentUpon>202201202126432_ModifiedMediaParentObject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201202152219_RefactoredShowAndMovie.cs" />
-    <Compile Include="Migrations\202201202152219_RefactoredShowAndMovie.designer.cs">
-      <DependentUpon>202201202152219_RefactoredShowAndMovie.cs</DependentUpon>
+    <Compile Include="Migrations\202201202220387_initialMigration.cs" />
+    <Compile Include="Migrations\202201202220387_initialMigration.designer.cs">
+      <DependentUpon>202201202220387_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Movie.cs" />
@@ -112,14 +104,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202201202117345_TestMediaDb.resx">
-      <DependentUpon>202201202117345_TestMediaDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201202126432_ModifiedMediaParentObject.resx">
-      <DependentUpon>202201202126432_ModifiedMediaParentObject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201202152219_RefactoredShowAndMovie.resx">
-      <DependentUpon>202201202152219_RefactoredShowAndMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202201202220387_initialMigration.resx">
+      <DependentUpon>202201202220387_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
