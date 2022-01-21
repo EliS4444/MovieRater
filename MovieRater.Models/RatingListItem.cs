@@ -10,6 +10,7 @@ namespace MovieRater.Models
     public class RatingListItem
     {
         public int RatingId { get; set; }
+        public string Title { get; set; }
         public double Score { get; set; }
         public string Remarks { get; set; }
         [Display(Name="Created")]

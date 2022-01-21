@@ -14,5 +14,6 @@ namespace MovieRater.Models
         public double Score { get; set; }
         [MaxLength(255)]
         public string Remarks { get; set; }
+        public int MediaId { get; set; }
     }
 }

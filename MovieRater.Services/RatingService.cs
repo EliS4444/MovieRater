@@ -23,6 +23,7 @@ namespace MovieRater.Services
                 new Rating()
                 {
                     OwnerId = _userId,
+                    Id = model.MediaId,
                     Score = model.Score,
                     Remarks = model.Remarks,
                     CreatedUtc = DateTimeOffset.Now,
@@ -43,6 +44,7 @@ namespace MovieRater.Services
                     .Select(e => new RatingListItem
                     {
                         RatingId = e.RatingId,
+                        Title = e.Media.Title,
                         Score = e.Score,
                         Remarks = e.Remarks,
                         CreatedUtc = e.CreatedUtc
