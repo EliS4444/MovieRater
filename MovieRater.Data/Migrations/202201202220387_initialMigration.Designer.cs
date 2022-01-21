@@ -7,13 +7,13 @@ namespace MovieRater.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class TestMediaDb : IMigrationMetadata
+    public sealed partial class initialMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TestMediaDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "202201202117345_TestMediaDb"; }
+            get { return "202201202220387_initialMigration"; }
         }
         
         string IMigrationMetadata.Source
