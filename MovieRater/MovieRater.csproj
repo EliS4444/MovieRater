@@ -210,6 +210,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RatingsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -313,6 +314,14 @@
     <ProjectReference Include="..\MovieRater.Data\MovieRater.Data.csproj">
       <Project>{4a0a6db3-e1f4-46f7-a795-4241a7322b61}</Project>
       <Name>MovieRater.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieRater.Models\MovieRater.Models.csproj">
+      <Project>{DE772069-9661-400D-AE03-23C6C951D290}</Project>
+      <Name>MovieRater.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieRater.Services\MovieRater.Services.csproj">
+      <Project>{B25FEE97-B3D3-45B7-9067-8656A3C4C872}</Project>
+      <Name>MovieRater.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
