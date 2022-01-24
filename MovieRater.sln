@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRater", "MovieRater\MovieRater.csproj", "{C983F2BC-E9C8-4941-BE2A-E04F1564FB7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRater.Data", "MovieRater.Data\MovieRater.Data.csproj", "{4A0A6DB3-E1F4-46F7-A795-4241A7322B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRater.Models", "MovieRater.Models\MovieRater.Models.csproj", "{DE772069-9661-400D-AE03-23C6C951D290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRater.Services", "MovieRater.Services\MovieRater.Services.csproj", "{B25FEE97-B3D3-45B7-9067-8656A3C4C872}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{C983F2BC-E9C8-4941-BE2A-E04F1564FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C983F2BC-E9C8-4941-BE2A-E04F1564FB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C983F2BC-E9C8-4941-BE2A-E04F1564FB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0A6DB3-E1F4-46F7-A795-4241A7322B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0A6DB3-E1F4-46F7-A795-4241A7322B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0A6DB3-E1F4-46F7-A795-4241A7322B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0A6DB3-E1F4-46F7-A795-4241A7322B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE772069-9661-400D-AE03-23C6C951D290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE772069-9661-400D-AE03-23C6C951D290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE772069-9661-400D-AE03-23C6C951D290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE772069-9661-400D-AE03-23C6C951D290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25FEE97-B3D3-45B7-9067-8656A3C4C872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25FEE97-B3D3-45B7-9067-8656A3C4C872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25FEE97-B3D3-45B7-9067-8656A3C4C872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25FEE97-B3D3-45B7-9067-8656A3C4C872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
